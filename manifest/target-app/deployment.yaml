@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: web
-          image: nginx:alpine
+          image: payment-api:v1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               cpu: "200m"
