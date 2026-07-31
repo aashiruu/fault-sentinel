@@ -173,14 +173,6 @@ Scrape metrics in a separate terminal while an experiment is active:
 curl -s http://localhost:8080/metrics | grep chaos_
 ```
 
-Example output:
-
-```
-# HELP chaos_injected_faults_total Total number of injected faults per target pod.
-# TYPE chaos_injected_faults_total counter
-chaos_injected_faults_total{fault_type="network_delay",target_pod="payment-api-667fdccc65-gwmfl"} 1
-```
-
 ---
 
 ## Development & Testing
